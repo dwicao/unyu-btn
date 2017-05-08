@@ -1,17 +1,12 @@
 {
   "name": "unyu-btn",
-  "version": "0.0.1",
-  "description": "Tombol Unyu React Native",
+  "version": "0.0.3",
+  "description": "Tombol Unyu React Native Expo",
   "author": "dwicao",
   "private": false,
   "main": "src/main.js",
   "files": [
     "src",
     "README.md"
-  ],
-  "dependencies": {
-    "expo": "16.0.0",
-    "react": "16.0.0-alpha.6",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-16.0.0.tar.gz"
-  }
+  ]
 }

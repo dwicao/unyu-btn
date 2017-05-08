@@ -33,23 +33,20 @@ class UnyuBtn extends React.Component {
     });
     
     return (
-      <View style={styles.container}>
-        <TouchableOpacity activeOpacity={1} onPress={this.handlePress}>
-          <View style={styles.btn1}/>
-          <Animated.View style={[styles.btn2, { transform: [ { translateY: unyuer } ] }]}>
-            <Text style={styles.text}>Jomblo!</Text>
-          </Animated.View>
-        </TouchableOpacity>
-      </View>
+      <TouchableOpacity activeOpacity={1} onPress={this.handlePress} style={styles.container}>
+        <View style={styles.btn1}/>
+        <Animated.View style={[styles.btn2, { transform: [ { translateY: unyuer } ] }]}>
+          <Text style={styles.text}>Jomblo!</Text>
+        </Animated.View>
+      </TouchableOpacity>
     );
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    width: 100,
+    height: 90,
   },
   btn1: {
     backgroundColor: 'gray',
