@@ -1,7 +1,7 @@
-import React from 'react';
-import { StyleSheet, Text, View, Animated, TouchableOpacity } from 'react-native';
+import React, { Component } from 'react';
+import { Text, View, StyleSheet, Animated, TouchableOpacity } from 'react-native';
 
-class UnyuBtn extends React.Component {
+export default class UnyuBtn extends Component {
   constructor() {
     super();
     
@@ -36,7 +36,7 @@ class UnyuBtn extends React.Component {
       <TouchableOpacity activeOpacity={1} onPress={this.handlePress} style={styles.container}>
         <View style={styles.btn1}/>
         <Animated.View style={[styles.btn2, { transform: [ { translateY: unyuer } ] }]}>
-          <Text style={styles.text}>Jomblo!</Text>
+          <Text style={styles.text}>Jombloer!</Text>
         </Animated.View>
       </TouchableOpacity>
     );
@@ -46,21 +46,22 @@ class UnyuBtn extends React.Component {
 const styles = StyleSheet.create({
   container: {
     width: 100,
-    height: 90,
+    height: 110,
   },
   btn1: {
-    backgroundColor: 'gray',
+    top: 10,
     width: 100,
-    height: 80,
+    height: 100,
+    backgroundColor: 'gray',
     borderRadius: 20,
   },
   btn2: {
     alignItems: 'center',
     justifyContent: 'center',
-    top: -90,
+    top: -100,
     backgroundColor: '#ccc',
     width: 100,
-    height: 80,
+    height: 100,
     borderRadius: 20,
   },
   text: {
@@ -70,5 +71,3 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent',
   }
 });
-
-export default UnyuBtn;
